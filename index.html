@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Inicio | gagoner - Servicios de ingenier&iacute;a y desarrollo</title>
+</head>
+<body>
+    <!-- Inicio semántica header -->
+	<header>
+	<!-- Título principal -->
+		<h1 id="titulo-index">¡Bienvenido a mi p&aacute;gina de portafolios!</h1>
+	</header>
+    <!-- Término semántica header -->
+    <main class="container">
+        <div class="logo">
+            <a href="index.html" class="nav__logo--izq"><img src="./images/logo.png" alt="Logo gagoner, un apret&oacute;n de manos" height="13"></a>
+        </div>
+        <nav class="menu">
+            <ul id="lista-menu">
+                <li class="nav__a--active"><a href="index.html">Inicio</a></li>
+                <li><a href="./pages/1sobremi.html">Sobre m&iacute;</a></li>
+                <li><a href="./pages/2servicios.html">Servicios</a></li>
+                <li><a href="./pages/3experiencia.html">Experiencia</a></li>
+                <li><a href="./pages/4contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+		<!-- Término menú de navegación -->
+        <div class="titulo-grid">
+			<hr class="hr-nav">
+			<div class="seccion__carrusel">
+				<div class="seccion__carrusel__interior">
+					<!-- Botones radio y correspondiente imagen -->
+					<input class="seccion__carrusel__interior--cambiar" type="radio" id="img1" name="carrusel" hidden="" checked="checked">
+					<div class="seccion__carrusel__interior__img">
+						<img src="./images/carrusel1.jpg" alt="Primera im&aacute;gen del carrusel">
+					</div>
+					<input class="seccion__carrusel__interior--cambiar" type="radio" id="img2" name="carrusel" hidden="" >
+					<div class="seccion__carrusel__interior__img">
+						<img src="./images/carrusel2.jpg" alt="Segunda im&aacute;gen del carrusel">
+					</div>
+					<input class="seccion__carrusel__interior--cambiar" type="radio" id="img3" name="carrusel" hidden="" >
+					<div class="seccion__carrusel__interior__img">
+						<img src="./images/carrusel3.jpg" alt="Tercera im&aacute;gen del carrusel">
+					</div>
+					<!-- Botones de control -->
+					<label for="img3" class="seccion__carrusel__interior__img--control prev control-1">‹</label>
+					<label for="img2" class="seccion__carrusel__interior__img--control next control-1">›</label>
+					<label for="img1" class="seccion__carrusel__interior__img--control prev control-2">‹</label>
+					<label for="img3" class="seccion__carrusel__interior__img--control next control-2">›</label>
+					<label for="img2" class="seccion__carrusel__interior__img--control prev control-3">‹</label>
+					<label for="img1" class="seccion__carrusel__interior__img--control next control-3">›</label>            
+					<!-- Botón radio indicador de imagen horizontal -->
+					<ol class="seccion__carrusel__interior__ol--indicador">
+						<li>
+							<label for="img1" class="seccion__carrusel__interior__ol--circulo">•</label>
+						</li>
+						<li>
+							<label for="img2" class="seccion__carrusel__interior__ol--circulo">•</label>
+						</li>
+						<li>
+							<label for="img3" class="seccion__carrusel__interior__ol--circulo">•</label>
+						</li>
+					</ol>
+				</div>
+			</div>
+        </div>
+        <article class="main">
+			<div class="columnas">
+				<h3>Misi&oacute;n</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate lacus eget nisl accumsan posuere. Nam non sodales dui. Ut sollicitudin erat sed quam viverra blandit. In mauris turpis, condimentum vitae sagittis eget, maximus non odio. Nullam ut massa a felis malesuada malesuada. Aliquam erat volutpat. Praesent ut tellus eros.</p>
+			</div>
+			<div class="columnas">
+				<h3>Visi&oacute;n</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate lacus eget nisl accumsan posuere. Nam non sodales dui. Ut sollicitudin erat sed quam viverra blandit. In mauris turpis, condimentum vitae sagittis eget, maximus non odio. Nullam ut massa a felis malesuada malesuada. Aliquam erat volutpat. Praesent ut tellus eros.</p> 
+			</div>
+		</article>		
+    </main>
+	<!-- Inicio de footer -->
+    <div class="footer-izq">
+    	<h4><a href="http://www.gagoner.com">&copy; gagoner 2022</a></h4>
+    </div>
+    <footer class="footer-der">
+		<h4><a href="#">LinkedIn</a></h4>
+		<h4><a href="#">Descargar CV</a></h4>
+	</footer>
+	<!-- Término de footer -->            
+</body>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../images/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Contacto | gagoner - Servicios de ingenier&iacute;a y desarrollo</title>
+</head>
+<body>
+    <!-- Inicio semántica header -->
+    <header>
+	<!-- Título principal -->
+        <h1 id="titulo-index" class="titulo">Contacto</h1>
+	</header>
+    <!-- Término semántica header -->
+    <main class="container">
+        <div class="logo">
+            <a href="../index.html" class="nav__logo--izq"><img src="../images/logo.png" alt="Logo gagoner, un apret&oacute;n de manos" height="13"></a>
+        </div>
+        <nav class="menu">
+            <ul id="lista-menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./1sobremi.html">Sobre m&iacute;</a></li>
+                <li><a href="./2servicios.html">Servicios</a></li>
+                <li><a href="./3experiencia.html">Experiencia</a></li>
+                <li class="nav__a--active"><a href="./4contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- Término menú de navegación -->
+        <section class="titulo-grid">
+            <div class="columnas">
+                <!-- Iframe -->
+                <h2 class="titulo2">Encu&eacute;ntranos:</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.7174824319886!2d-58.434443985283316!3d-34.58601446406752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc945173b3dd7%3A0xe8a347bb55df550c!2sCODER%20HOUSE%20%7C%20Coderhouse%20S.R.L.!5e0!3m2!1ses-419!2scl!4v1647381830651!5m2!1ses-419!2scl" width="600" height="690" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <!-- Término de Iframe -->
+            </div>
+            <div class="columnas">
+                <h2 class="titulo2">Formulario de Contacto:</h2>
+                <!-- Formulario -->
+                <article class="section__articulo">
+                    <form class="section__articulo__form" action="#">
+                        <fieldset>
+                            <legend><h3>Ingrese su informaci&oacute;n</h3></legend>
+                            <div>
+                                <label for="nombre">Nombre: </label>
+                                <input type="text" name="nombre" placeholder="Ingrese su nombre" id="nombre">
+                            </div>
+
+                            <div>
+                                <p>Sexo</p>
+                                <div class="radio"> 
+                                    <label for="mujer">Mujer: </label>
+                                    <input type="radio" name="sexo" value="mujer" id="mujer">
+                                    <label for="hombre">Hombre: </label>
+                                    <input type="radio" name="sexo" value="hombre" id="hombre">
+                                </div>
+                            </div>
+
+                            <div class="paisresidencia">
+                                <label for="pais">Pa&iacute;s de residencia: </label>
+                                <select name="pais" id="pais">
+                                    <option value="argentina">Argentina</option>
+                                    <option value="bolivia">Bolivia</option>
+                                    <option value="chile">Chile</option>
+                                    <option value="colombia">Colombia</option>
+                                    <option value="ecuador">Ecuador</option>
+                                    <option value="paraguay">Paraguay</option>
+                                    <option value="peru">Per&uacute;</option>
+                                    <option value="uruguay">Uruguay</option>
+                                    <option value="venezuela">Venezuela</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mensaje">
+                                <label for="mensaje">Mensaje: </label>
+                                <textarea name="mensaje" placeholder="Escriba su mensaje aqu&iacute;" style="height:200px" id="mensaje"></textarea>
+                            </div>
+
+                            <div>
+                                <label for="copia">Recibir copia del mensaje: </label>
+                                <input type="checkbox" name="copia" id="copia">
+                            </div>
+                            
+                            <div>
+                                <input type="submit" value="Enviar">
+                                <input type="reset" value="Borrar">
+                            </div>
+                        </fieldset>
+                    </form>
+                </article>
+                <br>
+            </div>            
+        </section>
+        <!-- Término de formulario -->
+    </main>
+        <!-- Inicio de footer -->
+        <div class="footer-izq">
+            <h4><a href="http://www.gagoner.com">&copy; gagoner 2022</a></h4>
+        </div>
+        <footer class="footer-der">
+            <h4><a href="#">LinkedIn</a></h4>
+            <h4><a href="#">Descargar CV</a></h4>
+        </footer>
+        <!-- Término de footer --> 
+</body>
+</html>
