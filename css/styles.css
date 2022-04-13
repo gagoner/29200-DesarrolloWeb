@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+/* Gradiente de fondo */
+.gradiente {
+    background-image: linear-gradient(to bottom, #f2f5d5, #fff2e0, #fff4f2, #fff9ff, #ffffff);
+}
+
 .container {  display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 58px 37% auto 3.7%;
