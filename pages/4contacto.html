@@ -48,70 +48,72 @@
     </header>
     <!-- Término semántica header -->
 
-    <main>
-        <section>
-            <div class="columnas">
+    <main class="container-fluid px-5">
+        <section class="row">
+            <div class="col-sm-6 pt-5">
                 <!-- Iframe -->
                 <h2 class="titulo2">Encu&eacute;ntranos:</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.7174824319886!2d-58.434443985283316!3d-34.58601446406752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc945173b3dd7%3A0xe8a347bb55df550c!2sCODER%20HOUSE%20%7C%20Coderhouse%20S.R.L.!5e0!3m2!1ses-419!2scl!4v1647381830651!5m2!1ses-419!2scl" width="600" height="690" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            <!-- Término de Iframe -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.7174824319886!2d-58.434443985283316!3d-34.58601446406752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc945173b3dd7%3A0xe8a347bb55df550c!2sCODER%20HOUSE%20%7C%20Coderhouse%20S.R.L.!5e0!3m2!1ses-419!2scl!4v1647381830651!5m2!1ses-419!2scl" width="100%" height="690" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <!-- Término de Iframe -->
             </div>
-            <div class="columnas">
+            <div class="col-sm-6 pt-5">
                 <h2 class="titulo2">Formulario de Contacto:</h2>
-                <!-- Formulario -->
-                <article class="section__articulo">
-                    <form class="section__articulo__form" action="#">
-                        <fieldset>
-                            <legend><h3>Ingrese su informaci&oacute;n</h3></legend>
-                            <div>
-                                <label for="nombre">Nombre: </label>
-                                <input type="text" name="nombre" placeholder="Ingrese su nombre" id="nombre">
-                            </div>
-
-                            <div>
-                                <p>Sexo</p>
-                                <div class="radio"> 
-                                    <label for="mujer">Mujer: </label>
-                                    <input type="radio" name="sexo" value="mujer" id="mujer">
-                                    <label for="hombre">Hombre: </label>
-                                    <input type="radio" name="sexo" value="hombre" id="hombre">
-                                </div>
-                            </div>
-
-                            <div class="paisresidencia">
-                                <label for="pais">Pa&iacute;s de residencia: </label>
-                                <select name="pais" id="pais">
-                                    <option value="argentina">Argentina</option>
-                                    <option value="bolivia">Bolivia</option>
-                                    <option value="chile">Chile</option>
-                                    <option value="colombia">Colombia</option>
-                                    <option value="ecuador">Ecuador</option>
-                                    <option value="paraguay">Paraguay</option>
-                                    <option value="peru">Per&uacute;</option>
-                                    <option value="uruguay">Uruguay</option>
-                                    <option value="venezuela">Venezuela</option>
-                                </select>
-                            </div>
-                            
-                            <div class="mensaje">
-                                <label for="mensaje">Mensaje: </label>
-                                <textarea name="mensaje" placeholder="Escriba su mensaje aqu&iacute;" style="height:200px" id="mensaje"></textarea>
-                            </div>
-
-                            <div>
-                                <label for="copia">Recibir copia del mensaje: </label>
-                                <input type="checkbox" name="copia" id="copia">
-                            </div>
-                            
-                            <div>
-                                <input type="submit" value="Enviar">
-                                <input type="reset" value="Borrar">
-                            </div>
-                        </fieldset>
-                    </form>
-                </article>
-                <br>
-            </div>            
+            <!-- Formulario -->
+            <div class="container-fluid px-5 my-5">
+                <form action="#">
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="ingreseSuNombre" type="text" placeholder="Ingrese su nombre" data-sb-validations="required" />
+                        <label for="ingreseSuNombre">Ingrese su nombre</label>
+                        <div class="invalid-feedback" data-sb-feedback="ingreseSuNombre:required">Ingrese su nombre is required.</div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
+                        <label for="emailAddress">Email Address</label>
+                        <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+                        <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label d-block">Sexo</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" id="mujer" type="radio" name="sexo" data-sb-validations="" />
+                            <label class="form-check-label" for="mujer">Mujer</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" id="hombre" type="radio" name="sexo" data-sb-validations="" />
+                            <label class="form-check-label" for="hombre">Hombre</label>
+                        </div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <select class="form-select" id="paisDeResidencia" aria-label="País de residencia">
+                            <option value="argentina">Argentina</option>
+                            <option value="bolivia">Bolivia</option>
+                            <option value="chile">Chile</option>
+                            <option value="colombia">Colombia</option>
+                            <option value="ecuador">Ecuador</option>
+                            <option value="paraguay">Paraguay</option>
+                            <option value="peru">Per&uacute;</option>
+                            <option value="uruguay">Uruguay</option>
+                            <option value="venezuela">Venezuela</option>
+                        </select>
+                        <label for="paisDeResidencia">País de residencia</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+                        <label for="message">Mensaje</label>
+                        <div class="invalid-feedback" data-sb-feedback="message:required">Ingrese su mensaje</div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label d-block"></label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" id="recibirCopiaDelMensaje" type="checkbox" name="" data-sb-validations="" />
+                            <label class="form-check-label" for="recibirCopiaDelMensaje">Recibir copia del mensaje</label>
+                        </div>
+                    </div>
+                    <div class="d-grid">
+                        <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
         </section>
         <!-- Término de formulario -->
     </main>
