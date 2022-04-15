@@ -18,75 +18,14 @@
       "titulo-grid titulo-grid"
       "main main";
 }
-  
-.logo { grid-area: logo;
-    display: flex;
-    align-items: center;
-	vertical-align: middle;
-    background-color: #F2F5D5;
-	padding-left: 10px;
-}
-  
-.menu { grid-area: menu;
-    display: flex;
-    justify-content: flex-end;
-    background-color: #F2F5D5;
-}
-  
+
 .titulo-grid { grid-area: titulo-grid;
     text-align: center;
 }
-  
+
 .main { grid-area: main;
     text-align: center;
     padding-top: 90px;
-}
-  
-.footer-izq {
-    position: fixed;
-    bottom: 0;
-    width: 50%;
-	text-align: left;
-	padding-left: 10px;
-    background-color: #D8A05E;
-}
-  
-.footer-der {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    width: 50%;
-	text-align: right;
-	padding-right: 10px;
-    background-color: #D8A05E;
-}
-
-/* Posicionar la lista en horizontal */
-#lista-menu {
-  text-align: right;
-}
-
-#lista-menu li {
-    display: inline-block;
-    list-style-type: none;
-}
-
-/* Dimensión y aspecto de la celda del enlace */
-li a {
-    display: block;
-    color: #184A5B;
-    text-align: center;
-    padding: 20px 5px;
-    text-decoration: none;
-}
-
-/* Animación del enlace */
-li a:hover:not(.nav__a--active) {
-    background-color: #D8A05E;
-}
-
-.nav__a--active {
-    background-color:#98D8C4;
 }
 
 /* Formato título */
@@ -94,134 +33,12 @@ li a:hover:not(.nav__a--active) {
     width: 100%;
     position: absolute;
     padding: 0px;
-    margin: 130px auto;
+    margin: 170px auto;
     text-align: center;
     color: rgba(255, 255, 255, 1);
     font-family: 'Open Sans', sans-serif;
     z-index: 9;
     text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33),-1px 0px 2px rgba(255, 255, 255, 0);
-}
-
-/* ####### Carrusel manual de imágenes ####### */
-
-/* Creación, posicionamiento del carrusel y diseño interior */
-.seccion__carrusel {
-    position: relative;
-	box-shadow:  0px 1px 6px rgba(0, 0, 0, 0.64);
-}
-
-/* Bloqueo de tamaño del bloque */
-.seccion__carrusel__interior {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 280px;    
-    object-fit: cover;
-}
-
-/* Imágenes en una misma posición y transparente */
-.seccion__carrusel__interior__img {
-    position: absolute;
-    width: 100%;
-    opacity: 0;
-    transition: opacity 0.6s ease-out;
-}
-
-/* Imágenes aparecen al presionar el botón radio */
-.seccion__carrusel__interior--cambiar:checked + .seccion__carrusel__interior__img {
-    position: static;
-    opacity: 100;
-}
-
-/* Ajuste de imagen al tamaño del bloque */
-.seccion__carrusel__interior__img img {
-    width: 100%;
-    height: 280px;
-    object-fit: cover;
-}
-
-/* Control de navegación de imágenes "< y >"*/
-
-/* Dimensionamiento y layout */
-.seccion__carrusel__interior__img--control {
-    background: rgba(0, 0, 0, 0.28);
-    border-radius: 50%;
-    color: #fff;
-    cursor: pointer;
-    display: none;
-    font-size: 40px;
-    height: 40px;
-    line-height: 35px;
-    position: absolute;
-    top: 50%;
-    cursor: pointer;
-    transform: translate(0, -50%);
-    text-align: center;
-    width: 40px;
-    z-index: 10;
-}
-
-/* Ubicación control izquierda "<" */
-.seccion__carrusel__interior__img--control.prev {
-    left: 2%;
-}
-
-/* Ubicación control derecha ">" */
-.seccion__carrusel__interior__img--control.next {
-    right: 2%;
-}
-
-/* Animación del control */
-.seccion__carrusel__interior__img--control:hover {
-    background: rgba(0, 0, 0, 0.8);
-    color: #aaaaaa;
-    text-align: center;
-}
-
-/* Habilita los controles de imágenes */
-#img1:checked ~ .control-1,
-#img2:checked ~ .control-2,
-#img3:checked ~ .control-3 {
-    display: block;
-}
-
-/* Indicador de imagen en carrusel */
-.seccion__carrusel__interior__ol--indicador {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    bottom: 2%;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 10;
-}
-
-/* Layout horizontal de ol */
-.seccion__carrusel__interior__ol--indicador li {
-    display: inline-block;
-    margin: 0 5px;
-}
-
-/* Formato círculo de carrusel */
-.seccion__carrusel__interior__ol--circulo {
-    color: #828282;
-    cursor: pointer;
-    display: block;
-    font-size: 35px;
-}
-
-.seccion__carrusel__interior__ol--circulo:hover {
-    color: #aaaaaa;
-}
-
-/* Formato de círculo o imagen seleccionada */
-#img1:checked ~ .control-1 ~ .seccion__carrusel__interior__ol--indicador 
-li:nth-child(1) .seccion__carrusel__interior__ol--circulo,
-#img2:checked ~ .control-2 ~ .seccion__carrusel__interior__ol--indicador li:nth-child(2) .seccion__carrusel__interior__ol--circulo,
-#img3:checked ~ .control-3 ~ .seccion__carrusel__interior__ol--indicador li:nth-child(3) .seccion__carrusel__interior__ol--circulo {
-color: #428bca;
 }
 
 /* Barra inferior del menú*/
@@ -238,15 +55,13 @@ h4 a {
 }
 
 h2 {
-    width: 100%;
     position: relative;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 10px;
     font-size: 170%;
     color: #184A5B;
     font-family: 'Open Sans', sans-serif;
     text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33),-1px 0px 2px rgba(255, 255, 255, 0);
+    padding-top: 20px;
 }
 
 h3 {
@@ -270,9 +85,13 @@ article {
 
 /* Título de páginas distintas al index.html */
 .titulo {
-    position: relative;
-    margin: 10px auto;
-    color: #184A5B !important;
+    color: #184A5B;
+    width: 100%;
+    margin: 25px auto;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33),-1px 0px 2px rgba(255, 255, 255, 0);
 }
 
 /* Título h2 de páginas distintas al index.html */
@@ -280,7 +99,6 @@ article {
     text-align: left;
     padding-left: 20px;
     padding-right: 20px;
-    margin-top: 150px;
     color: #D8A05E;
 }
 
@@ -381,7 +199,6 @@ p {
     line-height: 150%;
     padding-left: 20px;
     padding-right: 20px;
-    /* column-gap: 20px; */
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -392,46 +209,16 @@ p {
     margin-top: 50px;
 }
 
-.section__tabla {
-    text-align: justify;    
-    column-count: 0;
-    font-family: 'Open Sans', sans-serif;
-    line-height: 120%;
-}
-
 /* Configuración tabla */
 
-td, th {
-    border: 1px solid #ddd;
-    padding: 8px;
-}
-
-th {
-    padding-top: 12px;
-    padding-bottom: 12px;
+thead {
     text-align: center;
-    background-color: #184A5B;
-    color: white;
-}
-
-td {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 100px;
-    text-align: left;
 }
 
 table {
-    width: 100%;
     padding-left: 20px;
     padding-right: 20px;    
     margin-top: 30px;
-}
-
-/* Formato de la imagen */
-.gge {
-    border-radius: 324px;
-    display: inline-block;
 }
 
 .section__img {
@@ -551,7 +338,8 @@ table {
     }
     /* Formato título */
     #titulo-index {
-        margin: 170px auto;
+		position: relative;
+        margin: 30px auto;
         font-size: 150%;
     }
     .columnas {

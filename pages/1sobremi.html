@@ -7,58 +7,69 @@
     <link rel="icon" type="image/png" href="../images/favicon/favicon-32x32.png" sizes="32x32" />
     <link rel="stylesheet" href="../css/styles.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Latest compiled JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>Sobre m&iacute; | gagoner - Servicios de ingenier&iacute;a y desarrollo</title>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand"><img src="../images/logo.png" alt="Logo gagoner, un apret&oacute;n de manos" height="13"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active nav__a--active" href="./1sobremi.html">Sobre m&iacute;</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./2servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./3experiencia.html">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./4contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Término menú de navegación -->
+    
     <!-- Inicio semántica header -->
     <header>
-	<!-- Título principal -->
-        <h1 id="titulo-index" class="titulo animate__animated animate__flash">Mi Curriculum Vitae</h1>
-	</header>
+        <!-- Título principal -->
+        <h1 class="titulo animate__animated animate__flash">Mi Curriculum Vitae</h1>
+    </header>
     <!-- Término semántica header -->
-    <main class="container gradiente">
-        <div class="logo">
-            <a href="../index.html" class="nav__logo--izq"><img src="../images/logo.png" alt="Logo gagoner, un apret&oacute;n de manos" height="13"></a>
-        </div>
-        <nav class="menu">
-            <ul id="lista-menu">
-                <li><a href="../index.html">Inicio</a></li>
-                <li class="nav__a--active"><a href="./1sobremi.html">Sobre m&iacute;</a></li>
-                <li><a href="./2servicios.html">Servicios</a></li>
-                <li><a href="./3experiencia.html">Experiencia</a></li>
-                <li><a href="./4contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <!-- Término menú de navegación -->
+    <main>
         <!-- Inicio sección 1 -->
-        <section class="titulo-grid">
-                <div class="section__img">
-                    <img src="../images/gge.jpg" alt="Fotograf&iacute;a de Gabriel Gonz&aacute;lez Ernst" class="gge">
-                </div>
+        <section class="container-fluid">
+                    <img src="../images/gge.jpg" alt="Fotograf&iacute;a de Gabriel Gonz&aacute;lez Ernst" class="rounded-circle mx-auto d-block">
         </section>
         <!-- Término sección 1 -->
-        <section class="main">
+        <!-- Inicio sección 2 -->    
+        <section class="container-fluid">
             <h2 class="titulo2">Rese&ntilde;a laboral</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vulputate lacus eget nisl accumsan posuere. Nam non sodales dui. Ut sollicitudin erat sed quam viverra blandit. In mauris turpis, condimentum vitae sagittis eget, maximus non odio. Nullam ut massa a felis malesuada malesuada. Aliquam erat volutpat. Praesent ut tellus eros.</p>
         </section>
-        <!-- Inicio de footer -->
-        <div class="footer-izq">
-            <h4><a href="http://www.gagoner.com">&copy; gagoner 2022</a></h4>
-        </div>
-        <footer class="footer-der">
-            <h4><a href="#">LinkedIn</a></h4>
-            <h4><a href="#">Descargar CV</a></h4>
-        </footer>
-        <!-- Término de footer -->
+        <!-- Término sección 2 -->
     </main>
-            <!-- Inicio de footer -->
-            <div class="footer-izq">
-                <h4><a href="http://www.gagoner.com">&copy; gagoner 2022</a></h4>
-            </div>
-            <footer class="footer-der">
-                <h4><a href="#">LinkedIn</a></h4>
-                <h4><a href="#">Descargar CV</a></h4>
-            </footer>
-            <!-- Término de footer -->
+
+    <!-- Footer-->
+    <footer class="bg-light text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3">
+            &copy; 2022
+            <a class="text-dark" href="http://www.gagoner.com/"> gagoner.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
 </body>
 </html>
