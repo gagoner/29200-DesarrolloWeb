@@ -20,7 +20,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                     </li>
@@ -48,73 +48,85 @@
     </header>
     <!-- Término semántica header -->
 
-    <main class="container-fluid px-5">
-        <section class="row">
-            <div class="col-sm-6 pt-5">
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-md mb-5">
                 <!-- Iframe -->
                 <h2 class="titulo2">Encu&eacute;ntranos:</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.7174824319886!2d-58.434443985283316!3d-34.58601446406752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc945173b3dd7%3A0xe8a347bb55df550c!2sCODER%20HOUSE%20%7C%20Coderhouse%20S.R.L.!5e0!3m2!1ses-419!2scl!4v1647381830651!5m2!1ses-419!2scl" width="100%" height="690" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.7174824319886!2d-58.434443985283316!3d-34.58601446406752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc945173b3dd7%3A0xe8a347bb55df550c!2sCODER%20HOUSE%20%7C%20Coderhouse%20S.R.L.!5e0!3m2!1ses-419!2scl!4v1647381830651!5m2!1ses-419!2scl" allowfullscreen="" loading="lazy" class="glass mt-3"></iframe>
                 <!-- Término de Iframe -->
             </div>
-            <div class="col-sm-6 pt-5">
+            <div class="col-md mb-5">
                 <h2 class="titulo2">Formulario de Contacto:</h2>
-            <!-- Formulario -->
-            <div class="container-fluid px-5 my-5">
-                <form action="#">
-                    <div class="form-floating mb-3">
-                        <input class="form-control" id="ingreseSuNombre" type="text" placeholder="Ingrese su nombre" data-sb-validations="required" />
-                        <label for="ingreseSuNombre">Ingrese su nombre</label>
-                        <div class="invalid-feedback" data-sb-feedback="ingreseSuNombre:required">Ingrese su nombre is required.</div>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
-                        <label for="emailAddress">Email Address</label>
-                        <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
-                        <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label d-block">Sexo</label>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" id="mujer" type="radio" name="sexo" data-sb-validations="" />
-                            <label class="form-check-label" for="mujer">Mujer</label>
+                <!-- Formulario -->
+                    <form id="contactForm" action="#" class="glass mt-3">
+                        <div class="form-floating p-2">
+                            <input class="form-control " id="ingreseSuNombre" type="text" placeholder="Ingrese su nombre" data-sb-validations="required"/>
+                            <label for="ingreseSuNombre">Ingrese su nombre</label>
+                            <div class="invalid-feedback" data-sb-feedback="ingreseSuNombre:required">
+                                Por favor ingrese su nombre.
+                            </div>
                         </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" id="hombre" type="radio" name="sexo" data-sb-validations="" />
-                            <label class="form-check-label" for="hombre">Hombre</label>
+                        <div class="form-floating p-2">
+                            <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email"/>
+                            <label for="emailAddress">Ingrese su email</label>
+                            <div class="invalid-feedback" data-sb-feedback="emailAddress:required">
+                                Ingrese su email.
+                            </div>
+                            <div class="invalid-feedback" data-sb-feedback="emailAddress:email">
+                                Su correo electr&oacute;nico no es v&aacute;lido.
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <select class="form-select" id="paisDeResidencia" aria-label="País de residencia">
-                            <option value="argentina">Argentina</option>
-                            <option value="bolivia">Bolivia</option>
-                            <option value="chile">Chile</option>
-                            <option value="colombia">Colombia</option>
-                            <option value="ecuador">Ecuador</option>
-                            <option value="paraguay">Paraguay</option>
-                            <option value="peru">Per&uacute;</option>
-                            <option value="uruguay">Uruguay</option>
-                            <option value="venezuela">Venezuela</option>
-                        </select>
-                        <label for="paisDeResidencia">País de residencia</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
-                        <label for="message">Mensaje</label>
-                        <div class="invalid-feedback" data-sb-feedback="message:required">Ingrese su mensaje</div>
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label d-block"></label>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" id="recibirCopiaDelMensaje" type="checkbox" name="" data-sb-validations="" />
-                            <label class="form-check-label" for="recibirCopiaDelMensaje">Recibir copia del mensaje</label>
+                        <div class="form-floating p-2">
+                            <div><label class="form-label d-inline-block">Sexo</label></div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" id="mujer" type="radio" name="sexo" data-sb-validations="Ingrese su Sexo"/>
+                                <label class="form-check-label" for="mujer">Mujer</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" id="hombre" type="radio" name="sexo" data-sb-validations="Ingrese su Sexo"/>
+                                <label class="form-check-label" for="hombre">Hombre</label>
+                            </div>
                         </div>
-                    </div>
-                    <div class="d-grid">
-                        <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Enviar</button>
-                    </div>
-                </form>
+                        <div class="form-floating p-2">
+                            <select class="form-select " id="paisDeResidencia" aria-label="País de residencia">
+                                <option value="argentina">Argentina</option>
+                                <option value="bolivia">Bolivia</option>
+                                <option value="chile">Chile</option>
+                                <option value="colombia">Colombia</option>
+                                <option value="ecuador">Ecuador</option>
+                                <option value="paraguay">Paraguay</option>
+                                <option value="peru">Per&uacute;</option>
+                                <option value="uruguay">Uruguay</option>
+                                <option value="venezuela">Venezuela</option>
+                            </select>
+                            <label for="paisDeResidencia">Pa&iacute;s de residencia</label>
+                        </div>
+                        <div class="form-floating p-2">
+                            <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+                            <label for="message">Mensaje</label>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">
+                                Ingrese su mensaje
+                            </div>
+                        </div>
+                        <div class="form-floating p-2">
+                            <label class="form-label d-block"></label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" id="recibirCopiaDelMensaje" type="checkbox" name="" data-sb-validations=""/>
+                                <label class="form-check-label" for="recibirCopiaDelMensaje">Recibir copia del mensaje</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="px-2 pb-2 col d-flex justify-content-end">
+                                <button class="btn btn-primary btn-lg" id="submitButton" type="submit">Enviar</button>
+                            </div>
+                            <div class="px-2 pb-2 col">
+                                <button class="btn btn-secondary btn-lg" id="resetButton" type="reset">Borrar</button>
+                            </div>
+                        </div>
+                    </form>
             </div>
-        </section>
+        </div>
         <!-- Término de formulario -->
     </main>
     
@@ -126,5 +138,6 @@
         </div>
         <!-- Copyright -->
     </footer>
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </body>
 </html>
