@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+// Variables
+$miFuente: 'Open Sans', sans-serif;
+$miPadding: 20px;
+$miSombra: 0px 1px 2px rgba(31, 38, 135, 0.37),-1px 0px 2px rgba(255, 255, 255, 0);
+$miSombra2: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+$miColorH1--index: white;
+$miColorH1: #184A5B;
+$miColorH2: #D8A05E;
+$miColorH3: #1955a3;
+
+// Importar
+@import "_titulos";
+
+p {
+    text-align: justify;
+    line-height: 150%;
+    padding-left: $miPadding;
+    padding-right: $miPadding;
+    font-family: $miFuente;
+}
+
+iframe {
+    width: 100%;
+    height: 90%;
+}
+
+.glass {
+    // background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: $miSombra2;
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.card-body {
+    h3 {
+        color: $miColorH3;
+        text-align: center;
+    }
+
+    h4 {
+        font-size: larger;
+    }
+}
+
+// Importar
+@import "_media";

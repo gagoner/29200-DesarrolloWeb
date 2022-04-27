@@ -1,0 +1,31 @@
+//Título index 
+#titulo-index {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 170px auto;
+    text-align: center;
+    color: $miColorH1--index;
+    font-family: $miFuente;
+    z-index: 9;
+    text-shadow: $miSombra;
+}
+
+// Títlo páginas
+.titulo {
+    color: $miColorH1;
+    width: 100%;
+    margin: 25px auto;
+    text-align: center;
+    font-family: $miFuente;
+    z-index: 9;
+    text-shadow: $miSombra;
+}
+
+// Título H2
+.titulo2 {
+    text-align: left;
+    padding-left: $miPadding;
+    padding-right: $miPadding;
+    color: $miColorH2;
+}
