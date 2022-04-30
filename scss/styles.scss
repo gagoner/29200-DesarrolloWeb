@@ -13,7 +13,7 @@ $miColorH2: #D8A05E;
 $miColorH3: #1955a3;
 
 // Importar
-@import "_titulos";
+@import "titulos";
 
 p {
     text-align: justify;
@@ -49,4 +49,4 @@ iframe {
 }
 
 // Importar
-@import "_media";
+@import "media";

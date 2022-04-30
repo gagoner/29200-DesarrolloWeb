@@ -54,6 +54,7 @@ iframe {
 .card-body h4 {
   font-size: larger; }
 
+/* vista desktop */
 @media only screen and (min-width: 1240px) {
   #titulo-index {
     font-size: 250%; } }
