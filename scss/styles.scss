@@ -13,7 +13,7 @@ $miColorH2: #D8A05E;
 $miColorH3: #1955a3;
 
 // Importar
-@import "_titulos";
+@import "titulos";
 
 p {
     text-align: justify;
@@ -28,8 +28,8 @@ iframe {
     height: 90%;
 }
 
+/* Formato cajas */
 .glass {
-    // background: rgba( 255, 255, 255, 0.25 );
     box-shadow: $miSombra2;
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
@@ -49,4 +49,4 @@ iframe {
 }
 
 // Importar
-@import "_media";
+@import "media";
