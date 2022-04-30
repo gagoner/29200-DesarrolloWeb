@@ -1,7 +1,11 @@
 {
   "name": "29200-desarrolloweb",
   "version": "1.0.0",
+<<<<<<< HEAD
   "description": "Desafío 10 SASS II + SEO",
+=======
+  "description": "Trabajo en SASS",
+>>>>>>> desafio/9-AplicandoSASS
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,13 +16,21 @@
     "type": "git",
     "url": "git+https://github.com/gagoner/29200-DesarrolloWeb.git"
   },
+<<<<<<< HEAD
   "author": "gagoner",
+=======
+  "author": "Gabriel González Ernst",
+>>>>>>> desafio/9-AplicandoSASS
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/gagoner/29200-DesarrolloWeb/issues"
   },
   "homepage": "https://github.com/gagoner/29200-DesarrolloWeb#readme",
+<<<<<<< HEAD
   "devDependencies": {
+=======
+  "dependencies": {
+>>>>>>> desafio/9-AplicandoSASS
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.15"
   }

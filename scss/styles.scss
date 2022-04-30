@@ -28,8 +28,8 @@ iframe {
     height: 90%;
 }
 
+/* Formato cajas */
 .glass {
-    // background: rgba( 255, 255, 255, 0.25 );
     box-shadow: $miSombra2;
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
