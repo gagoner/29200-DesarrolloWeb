@@ -7,10 +7,14 @@ $miFuente: 'Open Sans', sans-serif;
 $miPadding: 20px;
 $miSombra: 0px 1px 2px rgba(31, 38, 135, 0.37),-1px 0px 2px rgba(255, 255, 255, 0);
 $miSombra2: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-$miColorH1--index: white;
-$miColorH1: #184A5B;
-$miColorH2: #D8A05E;
-$miColorH3: #1955a3;
+
+// Mapa de colores
+$colores: (
+    h1--index: white,
+    h1: #184A5B,
+    h2: #D8A05E,
+    h3: #1955a3
+);
 
 // Importar
 @import "titulos";
@@ -37,9 +41,10 @@ iframe {
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
+/* Uso de MAP-GET */
 .card-body {
     h3 {
-        color: $miColorH3;
+        color: map-get($colores,h3);
         text-align: center;
     }
 

@@ -1,19 +1,8 @@
-//Título index 
-#titulo-index {
-    width: 100%;
-    position: absolute;
-    padding: 0px;
-    margin: 170px auto;
-    text-align: center;
-    color: $miColorH1--index;
-    font-family: $miFuente;
-    z-index: 9;
-    text-shadow: $miSombra;
-}
-
 // Títlo páginas
+// Título H1
+/* Uso de MAP-GET */
 .titulo {
-    color: $miColorH1;
+    color: map-get($colores,h1);
     width: 100%;
     margin: 25px auto;
     text-align: center;
@@ -23,9 +12,21 @@
 }
 
 // Título H2
+/* Uso de MAP-GET y EXTEND*/
 .titulo2 {
+    @extend .titulo;
     text-align: left;
     padding-left: $miPadding;
     padding-right: $miPadding;
-    color: $miColorH2;
+    color: map-get($colores,h2);
+}
+
+//Título index 
+/* Uso de MAP-GET y EXTEND */
+#titulo-index {
+    @extend .titulo;
+    position: absolute;
+    padding: 0px;
+    margin: 170px auto;
+    color: map-get($colores,h1--index);
 }
